@@ -1,0 +1,42 @@
+<!-- movies.ejs -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteers Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Noto+Music&family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ </head>
+ <body>
+
+    <h1>Volunteers Website</h1>
+    <table class="Volunteers">
+        <tr>
+            <th>Volunteer</th>
+            <th>Event</th>
+            <th>Task</th>
+            <th>Hour</th>
+            <th>Delete</th>
+        </tr>
+        <% for (var i = 0; i < movies.length; i++) { %>
+        <tr>
+            <td><%= movies[i].movie_name %></td>
+            <td><%= movies[i].studio_name %></td>
+            <td>
+                <a href="/delete_movie/<%= movies[i].id %>">Delete</a>
+            </td>
+        </tr>
+        <% } %>
+    </table>
+    <center>
+        <a class="button" href="/create_name" style="font-size: 18px; font-weight: 500;">Add Name</a>
+      </center>
+ </body>
+ <!-- Bootstrap JS and dependencies -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </html>

@@ -1,0 +1,64 @@
+<!-- update_movie.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteers Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Noto+Music&family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="mt-5 mb-5">Edit Movies</h1>
+    <form method="post" action="/update_movie/<%= movie.id %>">
+        <label for="movie_name">Movie Name :</label>
+        <input type="text" id="movie_name" name="movie_name" value="<%= movie.movie_name %>">
+        <br>
+        <label for="movie_detail">Movie Detail :</label>
+        <input type="text" id="movie_detail" name="movie_detail" value="<%= movie.movie_detail %>">
+        <br>
+        <label for="categoryID">Category :</label>
+        <br>
+        <select class="form-select" aria-label="Default select example" name="categoryID">
+            <% for (var i = 0; i < category.length; i++) { %>
+               <option value="<%= category[i].id %>" <%= category[i].name === movie.category_name ? 'selected' : '' %>>
+                  <%= category[i].name %>
+               </option>
+            <% } %>
+         </select>
+        <br>
+        <label for="studioID">Studio : </label>
+        <br>
+        <select class="form-select" aria-label="Default select example" name="studioID">
+            <% for (var i = 0; i < studio.length; i++) { %>
+               <option value="<%= studio[i].id %>" <%= studio[i].name === movie.studio_name ? 'selected' : '' %>>
+                  <%= studio[i].name %>
+               </option>
+            <% } %>
+         </select>
+        <br>
+        <label for="director">Director :</label>
+        <input type="text" id="director" name="director" value="<%= movie.director %>">
+        <br>
+        <label for="flimmaking_funds">Budget :</label>
+        <input type="text" id="flimmaking_funds" name="flimmaking_funds" value="<%= movie.flimmaking_funds %>">
+        <br>
+        <label for="movie_income">Movie Income :</label>
+        <input type="text" id="movie_income" name="movie_income" value="<%= movie.movie_income %>">
+        <br>
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <a class="back-btn" href="/movies_reviews/<%= movie.id %>" style="text-decoration: none;">Back</a>
+            <input type="submit" value="Update" style="background-color: #39974A; margin-right: 10px; height: 80%;">
+           </div>
+    </form>
+</body>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,40 @@
+<!-- create_movie.ejs -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/icons/popcorn.png">
+    <title>Volunteers Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Noto+Music&family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <h1 class="mt-5 mb-5" style="font-size: 64px;">Add Name</h1>
+    <form method="post" action="/create_movie">
+        <label for="movie_name">Name :</label>
+        <input type="text" id="movie_name" name="movie_name">
+        <br>
+        <label for="movie_detail">Surname :</label>
+        <input type="text" id="movie_detail" name="movie_detail">
+        <br>
+        <label for="director">Gender :</label>
+        <input type="text" id="director" name="director">
+        <br>
+        <label for="flimmaking_funds">Age :</label>
+        <input type="text" id="flimmaking_funds" name="flimmaking_funds">
+        <br>
+        <label for="movie_income">Event :</label>
+        <input type="text" id="movie_income" name="movie_income">
+        <br>
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+         <a class="back-btn" href="/" style="text-decoration: none;">Back</a>
+         <input type="submit" value="Confirm" style="background-color: #39974A; margin-right: 10px; height: 80%;">
+        </div>
+    </form>
+ </body>
+ </html>

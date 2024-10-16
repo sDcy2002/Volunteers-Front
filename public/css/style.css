@@ -1,0 +1,253 @@
+/* Set font family and size for the whole page */
+body {
+    font-size: 16px;
+    background-image: url('../images/Employee-Volunteering-Double-A-1400x733.jpg');
+    background-size: cover; /* ทำให้ภาพขยายเต็มพื้นที่ */
+    background-repeat: repeat; /* ไม่ให้ภาพซ้ำ */
+  }
+  
+  /* Center the main heading */
+  h1 {
+    font-family: "Anton SC", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+  }
+  
+  h3 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  h4 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Style the table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  th {
+    padding-left: 30px;
+    font-family: "Noto Music", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #428FF5;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding-left: 30px;
+  }
+  
+  tr {
+    background-color: #bcdceb;
+  }
+
+  tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+/* Style the form */
+form {
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    background-color: rgba(30, 30, 30, 0.7);
+    color: #ffffff;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .form-movie-detail {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .form-movie-detail img {
+    align-items: center;
+  }
+
+  .form-movie-detail span {
+    color: #428FF5;
+  }
+
+  .form-movie-detail p {
+    font-weight: 300;
+  }
+
+  .form-reviews {
+    background-color: #fff;
+    color: #1E1E1E;
+  }
+
+  .box-reviews {
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: #f2f2f2;
+  }
+
+  label {
+    color: #ffffff;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+  }
+  
+  input[type="submit"] {
+    background-color: #1E1E1E;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Style the links */
+  a {
+    display: inline-block;
+    margin: 10px;
+    color: #1E1E1E;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    /* border-bottom: 2px solid transparent; */
+    /* transition: border-bottom-color 0.2s; */
+  }
+  
+  a:hover {
+    color: #795b00;
+  }
+
+  .link-center {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .link-center a {
+    display: inline-block;
+    margin: 10px;
+    color: #1E1E1E;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s;
+  }
+  
+  .link-center a:hover {
+    border-bottom-color: #1E1E1E;
+  }
+
+/* Style the table */
+.movies-reviews-table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto; /* center the table */
+    margin-bottom: 20px;
+    border-radius: 20px; /* มุมโค้ง */
+    overflow: hidden; /* ป้องกันไม่ให้เนื้อหาเกินขอบ */
+  }
+
+  .categories-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto; /* center the table */
+    margin-bottom: 20px;
+    border-radius: 20px; /* มุมโค้ง */
+    overflow: hidden; /* ป้องกันไม่ให้เนื้อหาเกินขอบ */
+  }
+
+  .categories-table th {
+    font-size: 14px;
+  }
+  
+  
+.button {
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #F5C842; 
+  color: #1E1E1E; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  font-family: "Noto Sans Thai Looped", sans-serif;
+  font-weight: 400; 
+  font-size: 14px;
+}
+
+.button:hover {
+    background-color: #1E1E1E; /* สีพื้นหลังเมื่อเมาส์ชี้ไปที่ปุ่ม */
+    color: #F5C842;
+}
+
+.button2 {
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #ffbf00; 
+  color: #1E1E1E; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  font-family: "Noto Sans Thai Looped", sans-serif;
+  font-weight: 400; 
+  font-size: 14px;
+}
+
+.button2:hover {
+    background-color: #F5C842; /* สีพื้นหลังเมื่อเมาส์ชี้ไปที่ปุ่ม */
+    color: #1E1E1E;
+}
+
+.back-btn {
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #428FF5; 
+  color: #ffffff; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  font-family: "Noto Sans Thai Looped", sans-serif;
+  font-weight: 500; 
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  background-color: #244e84; /* สีพื้นหลังเมื่อเมาส์ชี้ไปที่ปุ่ม */
+  color: #ffffff;
+}
+
+ select {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 70%;
+  border-radius: 5px;
+ }
